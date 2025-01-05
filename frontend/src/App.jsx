@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
+import Chat from './pages/Chat'
 import ResetPassword from './pages/ResetPassword'
 
 import axios from 'axios'
@@ -119,6 +120,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </div>
